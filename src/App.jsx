@@ -41,7 +41,7 @@ function App() {
               alt={data.title}
               className="w-full rounded-lg shadow-md mb-4 cursor-pointer hover:opacity-80 transition"
               onClick={() => setShowHD(true)}
-            />
+              />
             {data.hdurl && (
               <p className="text-sm text-blue-400 cursor-pointer" onClick={() => setShowHD(true)}>
                 View HD Image
@@ -50,10 +50,10 @@ function App() {
           </>
         ) : (
           <iframe
-            title={data.title}
-            src={data.url}
-            className="w-full h-64 rounded-lg shadow-md"
-            allowFullScreen
+          title={data.title}
+          src={data.url}
+          className="w-full h-64 rounded-lg shadow-md"
+          allowFullScreen
           ></iframe>
         )}
 
@@ -74,14 +74,14 @@ function App() {
             <button
               className="absolute top-2 right-2 text-white bg-red-600 px-3 py-1 rounded cursor-pointer"
               onClick={() => setShowHD(false)}
-            >
+              >
               Close
             </button>
             <img
               src={data.hdurl}
               alt="HD NASA APOD"
               className="w-full max-h-[90vh] object-contain rounded-lg"
-            />
+              />
           </div>
         </div>
       )}
